@@ -534,6 +534,11 @@ set tags=./tags,./../tags,./../../tags,./../../../tags,./../../../../tags,./../.
 " vim-fugitive
 " vim command: Git <commit>
 
+" TODO
+" Let's try termdebug, which looks useful for debugging.
+" https://www.dannyadam.com/blog/2019/05/debugging-in-vim/
+
+
 "---------------------
 " C++ Coding
 "--------------------- 
@@ -544,7 +549,6 @@ set tags=./tags,./../tags,./../../tags,./../../../tags,./../../../../tags,./../.
 " TODO: - auto complte: https://www.youtube.com/watch?v=2f8h45YR494
 
 " TODO
-" - fix yarn version problem in Fedora 28
 " - CoC configuration
 " - clang-format: visual select, etc
 " - linux kernel coding convention
