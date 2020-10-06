@@ -281,17 +281,19 @@ endif
 "
 " airline
 " disable the default status line
-set noshowmode
-set noruler
-set laststatus=0
-set noshowcmd
-set shortmess=F
-" do not use powerline font and tabline
-" since I use nvim only for browser plugin
-if !has('nvim')
-    let g:airline_powerline_fonts = 1
-    let g:airline#extensions#tabline#enabled = 1
-    let g:airline#extensions#tabline#buffer_nr_show = 1
+if IsPluginInstalled('vim-airline')
+    set noshowmode
+    set noruler
+    set laststatus=0
+    set noshowcmd
+    set shortmess=F
+    " do not use powerline font and tabline
+    " since I use nvim only for browser plugin
+    if !has('nvim')
+        let g:airline_powerline_fonts = 1
+        let g:airline#extensions#tabline#enabled = 1
+        let g:airline#extensions#tabline#buffer_nr_show = 1
+    endif
 endif
 
 "---------------------
@@ -308,14 +310,14 @@ endif
 "
 " easymotion
 " <Space><Space> {w,b,f}
-if IsPluginInstalled('easymotion')
+if IsPluginInstalled('vim-easymotion')
     map <Space> <Plug>(easymotion-prefix)
 endif
 
 "
 " incsearch
 " <Ctrl>-j, <Ctrl>-k
-if IsPluginInstalled('incsearch')
+if IsPluginInstalled('incsearch.vim')
     map / <Plug>(incsearch-forward)
     map ? <Plug>(incsearch-backward)
     map g/ <Plug>(incsearch-stay)
@@ -349,7 +351,7 @@ endif
 
 
 " pencil
-if IsPluginInstalled('pencil')
+if IsPluginInstalled('vim-pencil')
     let g:airline_section_x = '%{PencilMode()}'
     let g:pencil#wrapModeDefault = 'hard'
     let g:pencil#textwidth = 79
@@ -382,7 +384,7 @@ endif
 " <leader>k or <C-x><C-k>: dictionary completion
 "
 " note: <C-S> <C-Q>: terminal freeze / unfreeze
-if IsPluginInstalled('lexical')
+if IsPluginInstalled('vim-lexical')
     let g:lexical#spell = 1
     let g:lexical#spelllang = ['en_us']
     let g:lexical#thesaurus = ['~/.vim/thesaurus/mthesaur.txt',]
@@ -410,7 +412,7 @@ endif
 " zA: open a fold your cursor is on recursively
 " zc: close a fold your cursor is on
 " zC: close a fold your cursor is on recursively
-if IsPluginInstalled('markdown')
+if IsPluginInstalled('vim-markdown')
     let g:markdown_fenced_languages = [
         \ 'bash=sh',
         \ 'c',
