@@ -262,7 +262,7 @@ nnoremap <silent> <C-k> :bnext<CR>
 "--------------------- 
 set termguicolors
 if has('nvim')
-    if IsPluginInstalled('seoul256-light')
+    if IsPluginInstalled('seoul256.vim')
         colo seoul256-light
     endif
     set background=light
@@ -280,7 +280,7 @@ endif
 
 "
 " airline
-" diable the default status line
+" disable the default status line
 set noshowmode
 set noruler
 set laststatus=0
