@@ -24,7 +24,7 @@ sudo dnf install -y xclip xsel
 ln -s $THIS_SCRIPT_PATH/_coc.vim ~/.coc.vim
 sudo dnf install -y vim vim-X11
 mkdir -p ~/.vim/undodir
-vim +PlugInstall +PlugUpdate +qall
+vim -c "PlugInstall --sync" -c "PlugUpdate --sync" -c "qall"
 
 # set up coc
 ln -s $THIS_SCRIPT_PATH/coc-settings.json ~/.vim/coc-settings.json

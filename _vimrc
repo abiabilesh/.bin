@@ -71,7 +71,8 @@ call plug#begin()
         \	'branch': 'release'},
     Plug 'rhysd/vim-clang-format',
         \  {'for' : ['c', 'cpp']},
-    Plug 'jackguo380/vim-lsp-cxx-highlight'
+    Plug 'jackguo380/vim-lsp-cxx-highlight',
+        \  {'for' : ['c', 'cpp']},
 
     " misc neovim plugins
     if has('nvim')
@@ -548,8 +549,8 @@ set tags=./tags,./../tags,./../../tags,./../../../tags,./../../../../tags,./../.
 " - make file type plugin
 
 "
-" coc
-if IsPluginInstalled('coc')
+" coc.nvim
+if IsPluginInstalled('coc.nvim')
     let g:coc_disable_startup_warning = 1 " for old vim
     
     autocmd BufNew,BufEnter *.c,*.C,*.cpp,*.cxx,*.h,*.hpp,*.tpp,*.S,*.s,*.asm
