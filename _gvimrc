@@ -1,0 +1,5 @@
+set guioptions-=r
+set guioptions-=m
+set guioptions-=T
+set guifont=Fira\ Code\ Medium\ 12
+

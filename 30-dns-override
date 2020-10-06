@@ -1,0 +1,3 @@
+#!/bin/sh
+
+echo "search ece.vt.edu gtisc.gatech.edu" >> /etc/resolv.conf
