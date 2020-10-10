@@ -54,7 +54,6 @@ call plug#begin()
     Plug 'iamcco/markdown-preview.nvim',
         \ { 'do': { -> mkdp#util#install() },
         \   'for': ['markdown', 'vim-plug'] }
-    Plug 'lervag/vimtex'
 
     " coding
     Plug 'vim-utils/vim-man'
@@ -439,25 +438,9 @@ if IsPluginInstalled('vim-markdown')
 endif
 
 
-" vimtex
-" <C-n>         auto completion of a latex tag
+" latex
 " <leaer>m      make!
-" :copen        open the error window
-" :cclose       close the error window
-" :cw           toggle the error window 
-" :cnext        go to next error
-" :cprev        go to previour error
-" 
-" <leader>le    open and close the compile error window
-" <leader>lv    open the pdf file
-" <leader>ll    compile the latex document (default vimtex)
-"
-" https://jdhao.github.io/2019/03/26/nvim_latex_write_preview/ 
-" https://vimways.org/2019/latex-in-vim/latex-in-vim/
-if IsPluginInstalled('vimtex')
-    let g:tex_flavor = "latex"
-    let g:vimtex_fold_enabled = 1
-endif
+let g:tex_flavor = "latex"
 
 
 "---------------------
