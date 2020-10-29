@@ -577,7 +577,7 @@ augroup filetype
                             \   call pencil#init({'wrap': 'hard', 'autoformat': 0})
                             \ | call lexical#init()
                             \ | setl spell spl=en_us
-                            \ | nnoremap <buffer> <silent> <leader>m :make! <CR>
+                            \ | nnoremap <buffer> <silent> <leader>m :wa <CR> <ESC> :make! <CR>
   autocmd Filetype text
                             \   call pencil#init({'wrap': 'hard', 'autoformat': 0})
                             \ | call lexical#init()
