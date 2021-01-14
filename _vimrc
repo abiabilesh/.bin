@@ -156,9 +156,11 @@ set wildmenu
 set nofoldenable " disable folding by default
 
 " use undo instead of backup or swap file
-set noswapfile
-set nobackup
-set nowritebackup
+" set noswapfile
+" set nobackup
+" set nowritebackup
+
+" use undo
 set undodir=~/.vim/undodir
 set undofile
 " color lolumn
