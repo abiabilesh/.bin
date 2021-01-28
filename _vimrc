@@ -155,10 +155,11 @@ set wildmenu
 " endif
 set nofoldenable " disable folding by default
 
-" use undo instead of backup or swap file
-" set noswapfile
-" set nobackup
-" set nowritebackup
+" NOTE: a redundant backup is better than a data lost.
+"   use undo instead of backup or swap file
+"   set noswapfile
+"   set nobackup
+"   set nowritebackup
 
 " use undo
 set undodir=~/.vim/undodir
@@ -539,6 +540,10 @@ set tags=./tags,./../tags,./../../tags,./../../../tags,./../../../../tags,./../.
 " - clang-format: visual select, etc
 " - linux kernel coding convention
 " - make file type plugin
+
+" *.{tpp,txx} is also a C++ file.
+autocmd BufRead,BufNewFile *.tpp setlocal filetype=cpp
+autocmd BufRead,BufNewFile *.txx setlocal filetype=cpp
 
 "
 " coc.nvim
