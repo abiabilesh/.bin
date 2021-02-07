@@ -77,7 +77,6 @@ call plug#begin()
     if has('nvim')
         Plug 'glacambre/firenvim',
             \ { 'do': { _ -> firenvim#install(0) }}
-        Plug 'ThePrimeagen/vim-be-good'
     endif
 call plug#end()
 
@@ -603,3 +602,12 @@ augroup filetype
                             \ | setl spell spl=en_us
 augroup END
 
+
+"--------------------
+" Browser integration
+"-------------------- 
+
+" More instructions on firenvim
+" - https://github.com/glacambre/firenvim
+" - https://jdhao.github.io/2020/01/01/firenvim_nvim_inside_browser/
+" - https://www.youtube.com/watch?v=ID_kNcj9cMo&t=233s

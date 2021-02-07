@@ -22,6 +22,3 @@ ln -f -s $THIS_SCRIPT_PATH/_vimrc ~/.config/nvim/init.vim
 
 # set up coc
 ln -s $THIS_SCRIPT_PATH/coc-settings.json ~/.config/nvim/coc-settings.json
-
-# More instructions on firenvim
-# https://jdhao.github.io/2020/01/01/firenvim_nvim_inside_browser/
