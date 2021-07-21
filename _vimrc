@@ -167,6 +167,9 @@ set undofile
 set colorcolumn=80
 " highlight ColorColumn ctermbg=0 guibg=lightgrey
 
+set langmap=ㅁa,ㅠb,ㅊc,ㅇd,ㄷe,ㄹf,ㅎg,ㅗh,ㅑi,ㅓj,ㅏk,ㅣl,ㅡm,ㅜn,ㅐo,ㅔp,ㅂq,ㄱr,ㄴs,ㅅt,ㅕu,ㅍv,ㅈw,ㅌx,ㅛy,ㅋz
+
+
 "--------------------
 " Misc configurations
 "--------------------
