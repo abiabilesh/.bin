@@ -2,7 +2,7 @@
 THIS_SCRIPT_PATH="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # install essential tools
-sudo dnf install -y make gcc curl wget git fira-code-fonts
+sudo dnf install -y make gcc curl wget git fira-code-fonts tmux
 
 # add myself to wheel group (for Fedora)
 sudo gpasswd -a `whoami` wheel
