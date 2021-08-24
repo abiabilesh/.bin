@@ -3,6 +3,7 @@ alias open='xdg-open $@ 2> /dev/null'
 alias ssh='ssh -Y -A'
 
 # vi
+alias vi='vimx'
 alias vim='vimx'
 
 # emacs
