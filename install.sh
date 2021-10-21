@@ -7,9 +7,6 @@ sudo dnf install -y make gcc curl wget git fira-code-fonts tmux
 # add myself to wheel group (for Fedora)
 sudo gpasswd -a `whoami` wheel
 
-# install dns-search domain
-sudo cp $THIS_SCRIPT_PATH/30-dns-override /etc/NetworkManager/dispatcher.d/30-dns-override
-
 # install conf files
 ln -f -s $THIS_SCRIPT_PATH/_tmux.conf ~/.tmux.conf
 ln -f -s $THIS_SCRIPT_PATH/_emacs ~/.emacs
@@ -33,6 +30,14 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 $THIS_SCRIPT_PATH/install-vim.sh
 $THIS_SCRIPT_PATH/install-nvim.sh
 $THIS_SCRIPT_PATH/install-cpubars.sh
+
+# set up git
+git config --global core.editor "vim"
+
+if [ "$USER" == "changwoo" ]; then
+    git config --global user.email "changwoo@vt.edu"
+    git config --global user.name "Changwoo Min"
+fi
 
 # finally, install postrc
 $THIS_SCRIPT_PATH/install-postrc.sh
