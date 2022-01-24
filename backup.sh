@@ -10,5 +10,5 @@ if [ ! -d $TARGET_DIR ]; then
 fi
 
 echo -e "\e[32mBackup $SOURCE_DIR to $TARGET_DIR...\e[0m"
-rsync -av --exclude={.cache,.config,.local,Downloads,*~,*.o,vmlinuz*,System.map*,initramfs*} \
+rsync -av --exclude={.cache,.config,.local,.zoom,.vim,.emacs.d,.oh-my-zsh,.vagrant.d,.texlive2021,Downloads,*~,*.o,vmlinuz*,System.map*,initramfs*} \
       $SOURCE_DIR $TARGET_DIR
