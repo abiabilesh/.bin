@@ -2,7 +2,12 @@
 THIS_SCRIPT_PATH="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 SOURCE_DIR=$HOME
+# - fedora
 TARGET_DIR="/run/media/changwoo/changwoo@vt.edu"
+if [ ! -d $TARGET_DIR ]; then
+    # - ubuntu
+    TARGET_DIR="/media/changwoo/changwoo@vt.edu"
+fi
 
 if [ ! -d $TARGET_DIR ]; then
     echo -e "\e[91mBackup drive is not mounted to $TARGET_DIR!\e[0m"
