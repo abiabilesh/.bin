@@ -1,28 +1,8 @@
 #!/bin/bash
 THIS_SCRIPT_PATH="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-# install nodejs first -- for fedora 28 or older
-sudo dnf install -y yarnpkg
-if [ $? -ne 0 ]
-then 
-    sudo dnf install -y gcc-c++ make
-    curl -sL https://rpm.nodesource.com/setup_12.x | sudo -E bash -
-    sudo dnf remove -y nodejs # clean install
-    sudo dnf install -y nodejs
-    sudo npm install -g yarn
-fi
-
-# install coc tools
-sudo dnf install -y clang clang-devel clang-libs clang-tools-extra
-sudo dnf install -y clang-analyzer npm 
-sudo dnf install -y bear
-
-# install x11 clipboard
-sudo dnf install -y xclip xsel
-
 # install vim
 ln -s $THIS_SCRIPT_PATH/_coc.vim ~/.coc.vim
-sudo dnf install -y vim vim-X11
 mkdir -p ~/.vim/undodir
 vim -c "PlugInstall --sync" -c "PlugUpdate --sync" -c "qall"
 
