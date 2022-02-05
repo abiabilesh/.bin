@@ -28,7 +28,7 @@ fi
 
 # - install coc tools
 sudo dnf install -y clang clang-devel clang-libs clang-tools-extra
-sudo dnf install -y clang-analyzer npm 
+sudo dnf install -y clang-analyzer
 sudo dnf install -y bear
 
 # - install x11 clipboard

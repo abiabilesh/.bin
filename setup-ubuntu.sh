@@ -9,24 +9,18 @@ sudo apt install -y zsh
 
 # install fzf
 # <Ctrl-t>, <Ctrl-r>, <Alt-c>
-sudo apt install -y fd-find # ripgrep the_silver_searcher bat
+sudo apt install -y fd-find 
+# ripgrep the_silver_searcher bat
 
 # install vim
-# - install nodejs first -- for fedora 28 or older
-# sudo dnf install -y yarnpkg
-# if [ $? -ne 0 ]
-# then 
-#     sudo dnf install -y gcc-c++ make
-#     curl -sL https://rpm.nodesource.com/setup_12.x | sudo -E bash -
-#     sudo dnf remove -y nodejs # clean install
-#     sudo dnf install -y nodejs
-#     sudo npm install -g yarn
-# fi
+# - install node.js first
+curl -sL install-node.now.sh/lts > /tmp/.nodejs-install.sh
+sudo bash /tmp/.nodejs-install.sh
+sudo rm -f /tmp/.nodejs-install.sh
+sudo npm install -g yarn
 
 # - install coc tools
-# sudo dnf install -y clang clang-devel clang-libs clang-tools-extra
-# sudo dnf install -y clang-analyzer
-sudo apt install -y npm 
+sudo apt install -y clang clangd clang-tools libclang clang-tidy clang-format
 sudo apt install -y bear
 
 # - install x11 clipboard
@@ -37,6 +31,4 @@ sudo apt install -y vim
 
 # install neovim
 sudo apt install -y neovim
-sudo ln -f -s /usr/bin /snap
-
 

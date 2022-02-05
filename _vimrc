@@ -552,9 +552,9 @@ autocmd BufRead,BufNewFile *.txx setlocal filetype=cpp
 if IsPluginInstalled('coc.nvim')
     let g:coc_disable_startup_warning = 1 " for old vim
     
-    autocmd BufNew,BufEnter *.c,*.C,*.cpp,*.cxx,*.h,*.hpp,*.tpp,*.S,*.s,*.asm
+    autocmd BufNew,BufEnter *.c,*.C,*.cpp,*.cxx,*.h,*.hpp,*.hxx,*.tpp,*.txx,*.S,*.s,*.asm
                             \ execute "silent! CocEnable"
-    autocmd BufLeave        *.c,*.C,*.cpp,*.cxx,*.h,*.hpp,*.tpp,*.S,*.s,*.asm
+    autocmd BufLeave        *.c,*.C,*.cpp,*.cxx,*.h,*.hpp,*.hxx,*.tpp,*.txx,*.S,*.s,*.asm
                             \ execute "silent! CocDisable"
     
     source ~/.coc.vim " loading (almost) default coc configuration
