@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # install essential tools
+sudo apt-get update
 sudo apt install -y make gcc curl wget git tmux
 sudo apt install -y fonts-firacode tilix
 
