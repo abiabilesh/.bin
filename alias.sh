@@ -3,8 +3,8 @@ alias open='xdg-open $@ 2> /dev/null'
 alias ssh='ssh -Y -A'
 
 # vi
-alias vi='vimx'
-alias vim='vimx'
+alias vi='gvim -v'
+alias vim='gvim -v'
 
 # emacs
 alias e='emacsclient -a= -t -c'

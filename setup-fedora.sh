@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # install essential tools
-sudo dnf install -y make gcc curl wget git fira-code-fonts tmux
+sudo dnf install -y make gcc curl wget git tmux
+sudo dnf install -y fonts-firacode tilix
 
 # add myself to wheel group (for Fedora)
 sudo gpasswd -a `whoami` wheel
