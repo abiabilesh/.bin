@@ -1,9 +1,11 @@
 #!/bin/bash
 
-# install essential tools
 sudo apt-get update
+
+# install essential tools
 sudo apt install -y make gcc curl wget git tmux
 sudo apt install -y fonts-firacode tilix
+sudo apt install -y tig htop cmake
 
 # install zsh
 sudo apt install -y zsh
