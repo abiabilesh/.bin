@@ -12,6 +12,9 @@ sudo apt install -y zsh
 sudo apt install -y fd-find 
 # ripgrep the_silver_searcher bat
 
+# install gnome tweak tool to remap CAPSLOCK to Ctrl
+sudo apt install -y gnome-tweak-tool
+
 # install vim
 # - install node.js first
 curl -sL install-node.now.sh/lts > /tmp/.nodejs-install.sh
