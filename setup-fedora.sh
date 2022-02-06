@@ -47,4 +47,7 @@ then
     sudo snap install --beta nvim --classic
 fi
 
+# install ncurses library
+sudo dnf install -y ncurses-devel ncurses
+
 

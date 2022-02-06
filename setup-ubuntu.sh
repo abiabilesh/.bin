@@ -38,3 +38,7 @@ sudo apt install -y vim vim-gui-common
 # install neovim
 sudo apt install -y neovim
 
+# install ncurses library
+sudo apt install -y ncurses-base ncurses-bin
+
+
