@@ -26,14 +26,14 @@ sudo rm -f /tmp/.nodejs-install.sh
 sudo npm install -g yarn
 
 # - install coc tools
-sudo apt install -y clang clangd clang-tools libclang clang-tidy clang-format
+sudo apt install -y clang clangd clang-tools libclang-dev clang-tidy clang-format
 sudo apt install -y bear
 
 # - install x11 clipboard
 sudo apt install -y xclip xsel
 
 # - install vim-x11
-sudo apt install -y vim
+sudo apt install -y vim vim-gui-common
 
 # install neovim
 sudo apt install -y neovim
