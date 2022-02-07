@@ -1,24 +1,30 @@
 #!/bin/bash
 
-# sudo pacman -S yay
-# yay -S microsoft-edge-stable
+# udpate the package database
+sudo pacman -Syy --noconfirm
 
-# sudo pacman -Syyu texlive-most texlive-bin gnuplot
-# sudo pacman -Syyu libreoffice-still
+# install a web browser
+sudo pacman -S --noconfirm yay
+yay -S microsoft-edge-stable
+
+# install documentation tools
+sudo pacman -S --noconfirm  texlive-most texlive-bin gnuplot
+sudo pacman -S --noconfirm pandoc
+sudo pacman -S --noconfirm  libreoffice-still
 
 # install essential tools
-sudo pacman -S base-devel git tmux tig htop cmake
-sudo pacman -S tilix ttf-fira-code
+sudo pacman -S --noconfirm base-devel git tmux tig htop cmake
+sudo pacman -S --noconfirm tilix ttf-fira-code
 
 # install zsh
-sudo pacman -S zsh
+sudo pacman -S --noconfirm zsh
 
 # install fzf
 # <Ctrl-t>, <Ctrl-r>, <Alt-c>
-sudo pacman -S fd ripgrep ripgrep the_silver_searcher bat
+sudo pacman -S --noconfirm fd ripgrep ripgrep the_silver_searcher bat
 
 # install gnome tweak tool to remap CAPSLOCK to Ctrl
-sudo pacman -S gnome-tweaks
+sudo pacman -S --noconfirm gnome-tweaks
 
 # install vim
 # - install node.js first
@@ -28,19 +34,19 @@ sudo rm -f /tmp/.nodejs-install.sh
 sudo npm install -g yarn
 
 # - install coc tools
-sudo pacman -S clang 
-sudo pacman -S bear
+sudo pacman -S --noconfirm clang 
+sudo pacman -S --noconfirm bear
 
 # - install x11 clipboard
-sudo pacnma -S  xclip xsel
+sudo pacnma -S  --noconfirm xclip xsel
 
 # - install vim-x11
-sudo pacnma -S gvim
+sudo pacnma -S --noconfirm gvim
 
 # install neovim
-sudo pacnma -S neovim
+sudo pacnma -S --noconfirm neovim
 
 # install ncurses library
-sudo pacnma -S ncurses
+sudo pacnma -S --noconfirm ncurses
 
 
