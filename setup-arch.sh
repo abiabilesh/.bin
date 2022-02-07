@@ -15,6 +15,8 @@ sudo pacman -S --noconfirm  libreoffice-still
 # install essential tools
 sudo pacman -S --noconfirm base-devel git tmux tig htop cmake
 sudo pacman -S --noconfirm tilix ttf-fira-code
+sudo pacman -S --noconfirm adobe-source-han-sans-kr-fonts ttf-baekmuk 
+sudo pacman -S --noconfirm fcitx5-hangul fcitx5-configtool
 
 # install zsh
 sudo pacman -S --noconfirm zsh
