@@ -3,7 +3,8 @@
 # sudo pacman -S yay
 # yay -S microsoft-edge-stable
 
-# sudo pacman -Syyu texlive-most texlive-bin
+# sudo pacman -Syyu texlive-most texlive-bin gnuplot
+# sudo pacman -Syyu libreoffice-still
 
 # install essential tools
 sudo pacman -S base-devel git tmux tig htop cmake
@@ -14,8 +15,7 @@ sudo pacman -S zsh
 
 # install fzf
 # <Ctrl-t>, <Ctrl-r>, <Alt-c>
-sudo apt install -y fd-find 
-# ripgrep the_silver_searcher bat
+sudo pacman -S fd ripgrep ripgrep the_silver_searcher bat
 
 # install gnome tweak tool to remap CAPSLOCK to Ctrl
 sudo pacman -S gnome-tweaks
@@ -28,19 +28,19 @@ sudo rm -f /tmp/.nodejs-install.sh
 sudo npm install -g yarn
 
 # - install coc tools
-sudo apt install -y clang clangd clang-tools libclang-dev clang-tidy clang-format
-sudo apt install -y bear
+sudo pacman -S clang 
+sudo pacman -S bear
 
 # - install x11 clipboard
-sudo apt install -y xclip xsel
+sudo pacnma -S  xclip xsel
 
 # - install vim-x11
-sudo apt install -y vim vim-gui-common
+sudo pacnma -S gvim
 
 # install neovim
-sudo apt install -y neovim
+sudo pacnma -S neovim
 
 # install ncurses library
-sudo apt install -y ncurses-base ncurses-bin
+sudo pacnma -S ncurses
 
 
