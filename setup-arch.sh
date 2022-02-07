@@ -28,9 +28,7 @@ sudo pacman -S --noconfirm gnome-tweaks
 
 # install vim
 # - install node.js first
-curl -sL install-node.now.sh/lts > /tmp/.nodejs-install.sh
-sudo bash /tmp/.nodejs-install.sh
-sudo rm -f /tmp/.nodejs-install.sh
+sudo pacman -S --noconfirm nodejs
 sudo npm install -g yarn
 
 # - install coc tools
@@ -38,15 +36,15 @@ sudo pacman -S --noconfirm clang
 sudo pacman -S --noconfirm bear
 
 # - install x11 clipboard
-sudo pacnma -S  --noconfirm xclip xsel
+sudo pacman -S  --noconfirm xclip xsel
 
 # - install vim-x11
-sudo pacnma -S --noconfirm gvim
+sudo pacman -S --noconfirm gvim
 
 # install neovim
-sudo pacnma -S --noconfirm neovim
+sudo pacman -S --noconfirm neovim
 
 # install ncurses library
-sudo pacnma -S --noconfirm ncurses
+sudo pacman -S --noconfirm ncurses
 
 
