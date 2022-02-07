@@ -1,20 +1,16 @@
 #!/bin/bash
 
-# sudo pacman -S base-devel
-# sudo pacman -S git
-
 # sudo pacman -S yay
 # yay -S microsoft-edge-stable
 
 # sudo pacman -Syyu texlive-most texlive-bin
 
 # install essential tools
-sudo apt install -y make gcc curl wget git tmux
-sudo apt install -y fonts-firacode tilix
-sudo apt install -y tig htop cmake
+sudo pacman -S base-devel git tmux tig htop cmake
+sudo pacman -S tilix ttf-fira-code
 
 # install zsh
-sudo apt install -y zsh
+sudo pacman -S zsh
 
 # install fzf
 # <Ctrl-t>, <Ctrl-r>, <Alt-c>
