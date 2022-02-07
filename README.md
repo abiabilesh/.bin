@@ -1,8 +1,8 @@
 ## Minimal setting and configuration
 
 ```{.sh}
-$> setup-{fedora, ubuntu}.sh  # install necessary packages first
-$> install.sh                 # install setup and configurations
+$> setup-{fedora, ubuntu, arch}.sh  # install necessary packages first
+$> install.sh                       # install setup and configurations
 ```
 
 ## Useful documents

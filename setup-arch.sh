@@ -8,7 +8,7 @@ sudo pacman -S --noconfirm yay
 yay -S microsoft-edge-stable
 
 # install documentation tools
-sudo pacman -S --noconfirm  texlive-most texlive-bin gnuplot
+sudo pacman -S --noconfirm  texlive-most texlive-bin gnuplot python-pygments
 sudo pacman -S --noconfirm pandoc
 sudo pacman -S --noconfirm  libreoffice-still
 
