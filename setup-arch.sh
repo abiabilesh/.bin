@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# udpate the package database
-sudo pacman -Syy --noconfirm
-
 # install a web browser
 sudo pacman -S --noconfirm yay
 yay -S microsoft-edge-stable
