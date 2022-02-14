@@ -6,13 +6,15 @@ yay -S microsoft-edge-stable
 
 # install documentation tools
 # - paper writing
-sudo pacman -S --noconfirm texlive-most texlive-bin 
+sudo pacman -S --noconfirm texlive-most texlive-bin otf-latin-modern
 sudo pacman -S --noconfirm gnuplot python-pygments
 sudo pacman -S --noconfirm libreoffice-still
-# - lecture materials
-sudo pacman -S --noconfirm pandoc python-sphinx
 # - website
 sudo pacman -S --noconfirm pelican
+# - lecture materials
+sudo pacman -S --noconfirm pandoc python-sphinx
+# - lecture tools (3574)
+sudo pacman -S --noconfirm python-pexpect lcov gcovr
 
 # install essential tools
 sudo pacman -S --noconfirm base-devel python2 python3 git tmux tig htop cmake
