@@ -14,7 +14,7 @@ sudo pacman -S --noconfirm pelican
 # - lecture materials
 sudo pacman -S --noconfirm pandoc python-sphinx
 # - lecture tools (3574)
-sudo pacman -S --noconfirm python-pexpect lcov gcovr
+sudo pacman -S --noconfirm python-pexpect lcov gcovr valgrind
 
 # install essential tools
 sudo pacman -S --noconfirm base-devel python2 python3 git tmux tig htop cmake
