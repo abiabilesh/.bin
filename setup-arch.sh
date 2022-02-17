@@ -6,7 +6,7 @@ yay -S microsoft-edge-stable
 
 # install documentation tools
 # - paper writing
-sudo pacman -S --noconfirm texlive-most texlive-bin otf-latin-modern
+sudo pacman -S --noconfirm texlive-most texlive-bin otf-latin-modern texlive-langkorean
 sudo pacman -S --noconfirm gnuplot python-pygments
 sudo pacman -S --noconfirm libreoffice-still
 # - website
