@@ -32,7 +32,7 @@ sudo pacman -S --noconfirm zsh
 
 # install fzf
 # <Ctrl-t>, <Ctrl-r>, <Alt-c>
-sudo pacman -S --noconfirm fd ripgrep ripgrep the_silver_searcher bat
+sudo pacman -S --noconfirm fd ripgrep the_silver_searcher bat
 
 # install gnome tweak tool to remap CAPSLOCK to Ctrl
 sudo pacman -S --noconfirm gnome-tweaks
