@@ -8,7 +8,7 @@ yay -S microsoft-edge-stable
 # - paper writing
 sudo pacman -S --noconfirm texlive-most texlive-bin otf-latin-modern texlive-langkorean
 sudo pacman -S --noconfirm gnuplot python-pygments
-sudo pacman -S --noconfirm libreoffice-still
+sudo pacman -S --noconfirm libreoffice-fresh
 # - website
 sudo pacman -S --noconfirm pelican
 # - lecture materials
