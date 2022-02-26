@@ -20,12 +20,22 @@ sudo pacman -S --noconfirm python-pexpect lcov gcovr valgrind
 sudo pacman -S --noconfirm base-devel python2 python3 git tmux tig htop cmake
 sudo pacman -S --noconfirm tilix ttf-fira-code
 
-# install Hangul IME and fonts
+# install Hangul fonts
+sudo pacman -S --noconfirm adobe-source-han-sans-kr-fonts ttf-baekmuk noto-fonts-cjk
+
+# install Hangul IME
+# - https://ders45.blogspot.com/2017/03/manjaro-linux-17.html?m=1
+# - https://archived.forum.manjaro.org/t/help-with-setting-up-ibus-for-korean/129055
 # - https://forum.manjaro.org/t/guide-how-to-set-up-korean-keyboard-on-manjaro-kde/23799
 echo ko_KR.UTF-8 UTF-8 | sudo tee -a /etc/locale.gen
 sudo locale-gen
-sudo pacman -S --noconfirm adobe-source-han-sans-kr-fonts ttf-baekmuk 
-sudo pacman -S --noconfirm fcitx5-hangul fcitx5-configtool
+
+sudo pacman -S --noconfirm ibus ibus-hangul
+echo 'export GTK_IM_MODULE=ibus'        >> ~/.xprofile
+echo 'export XMODIFIERS=@im=ibus'       >> ~/.xprofile
+echo 'export QT_IM_MODULE=ibus'         >> ~/.xprofile
+echo 'export OOO_FORCE_DESKTOP="gnome"' >> ~/.xprofile
+echo 'ibus-daemon -drx'                 >> ~/.xprofile
 
 # install zsh
 sudo pacman -S --noconfirm zsh
