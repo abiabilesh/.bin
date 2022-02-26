@@ -174,7 +174,7 @@ set langmap=ㅁa,ㅠb,ㅊc,ㅇd,ㄷe,ㄸe,ㄹf,ㅎg,ㅗh,ㅑi,ㅓj,ㅏk,ㅣl,ㅡ
 " Misc configurations
 "--------------------
 
-let ru_newbie=1
+let ru_newbie=0
 if ru_newbie
     " Try to prevent bad habits like using the arrow keys for movement. This is
     " not the only possible bad habit. For example, holding down the h/j/k/l keys
