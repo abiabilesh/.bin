@@ -543,6 +543,10 @@ set tags=./tags,./../tags,./../../tags,./../../../tags,./../../../../tags,./../.
 " - linux kernel coding convention
 " - make file type plugin
 
+" NOTE
+" - Add set(CMAKE_EXPORT_COMPILE_COMMANDS ON) to CMakeLists.txt
+"   for QT applications
+
 " *.{tpp,txx} is also a C++ file.
 autocmd BufRead,BufNewFile *.tpp setlocal filetype=cpp
 autocmd BufRead,BufNewFile *.txx setlocal filetype=cpp
