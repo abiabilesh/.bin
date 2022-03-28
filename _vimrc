@@ -115,6 +115,9 @@ augroup END
 filetype plugin indent on " enable file type detection
 set autoindent
 
+" Hex mode
+" %!xxd
+
 "---------------------
 " Basic editing config
 "---------------------
