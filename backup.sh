@@ -7,6 +7,10 @@ TARGET_DIR="/run/media/changwoo/changwoo@vt.edu"
 if [ ! -d $TARGET_DIR ]; then
     # - ubuntu
     TARGET_DIR="/media/changwoo/changwoo@vt.edu"
+    if [ ! -d $TARGET_DIR ]; then
+        # - manjaro
+        TARGET_DIR="/run/media/changwoo/changwoo@vt.edu"
+    fi
 fi
 
 if [ ! -d $TARGET_DIR ]; then
