@@ -68,4 +68,14 @@ sudo pacman -S --noconfirm neovim
 # install ncurses library
 sudo pacman -S --noconfirm ncurses
 
+# Manual configuration
+# ====================
+# 
+# 1. auto enable bluetooth
+#   /etc/bluetooth/main.conf 
+#   AutoEnable=true 
+#   https://forum.manjaro.org/t/bluetooth-is-disabled-by-default-after-upgrading-to-the-latest-stable/111249
+#
+# 2. remap CAPSLOCK to Ctrl using gnome tweak tool
+
 
