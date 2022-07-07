@@ -19,6 +19,8 @@ sudo pacman -S --noconfirm python-pexpect lcov gcovr valgrind
 # install essential tools
 sudo pacman -S --noconfirm base-devel python2 python3 git tmux tig htop cmake
 sudo pacman -S --noconfirm tilix ttf-fira-code
+sudo pacman -S --noconfirm python-cairosvg
+
 
 # install Hangul fonts
 sudo pacman -S --noconfirm adobe-source-han-sans-kr-fonts ttf-baekmuk noto-fonts-cjk
