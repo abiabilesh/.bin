@@ -501,10 +501,10 @@ set csto=0   " choose the first option
 set cst      " replace ctags
 set nocsverb " no verborse
 
-let db = GetCscopeDB() 
-if db != ""
-    cs add db
-    if IsAbsCscopeDB(db)
+let $db = GetCscopeDB()
+if $db != ""
+    cs add $db
+    if IsAbsCscopeDB($db)
         set nocsre   " use absolute path
     else
         set csre     " interprete relative path to the location of cscope.out
